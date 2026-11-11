@@ -1,4 +1,3 @@
-
 <?php
 require_once "auth_check.php";
 
@@ -94,6 +93,7 @@ if ($room_id) {
 <html>
 <head>
     <title>Apply for Hostel Room</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -153,3 +153,4 @@ if ($room_id) {
 
 </body>
 </html>
+
