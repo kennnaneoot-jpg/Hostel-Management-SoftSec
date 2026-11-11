@@ -1,4 +1,3 @@
-
 <?php
 require_once "auth_check.php";
 
@@ -163,6 +162,7 @@ $result = $conn->query($sql);
 <html>
 <head>
     <title>Manage Applications</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -236,9 +236,10 @@ $result = $conn->query($sql);
                 Approve
             </button>
 
-            <button type="submit"
-                    name="action"
-                    value="Rejected">
+            <button type="submit" 
+                    name="action" 
+                    value="Rejected" 
+                    class="reject-btn">
                 Reject
             </button>
 
