@@ -27,6 +27,7 @@ $result = $conn->query($sql);
 <html>
 <head>
     <title>Available Hostel Rooms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
