@@ -78,6 +78,7 @@ $result = $conn->query(
 <html>
 <head>
     <title>Manage Rooms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
