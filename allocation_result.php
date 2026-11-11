@@ -1,4 +1,3 @@
-
 <?php
 require_once "auth_check.php";
 
@@ -39,6 +38,7 @@ $application = $result->fetch_assoc();
 <html>
 <head>
     <title>Application Status</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -98,3 +98,4 @@ $application = $result->fetch_assoc();
 
 </body>
 </html>
+
