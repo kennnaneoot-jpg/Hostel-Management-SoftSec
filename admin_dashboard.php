@@ -1,4 +1,3 @@
-
 <?php
 require_once "auth_check.php";
 
@@ -41,6 +40,7 @@ $pending_count = $conn->query(
 <html>
 <head>
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -54,10 +54,20 @@ $pending_count = $conn->query(
 <hr>
 
 <h3>System Overview</h3>
-
-<p>Total Rooms: <?= (int)$room_count ?></p>
-<p>Total Applications: <?= (int)$app_count ?></p>
-<p>Pending Applications: <?= (int)$pending_count ?></p>
+<div class="dashboard-cards">
+    <div class="card">
+        <h3>Total Rooms</h3>
+        <p><?= (int)$room_count ?></p>
+    </div>
+    <div class="card">
+        <h3>Total Applications</h3>
+        <p><?= (int)$app_count ?></p>
+    </div>
+    <div class="card">
+        <h3>Pending Applications</h3>
+        <p><?= (int)$pending_count ?></p>
+    </div>
+</div>
 
 <hr>
 
